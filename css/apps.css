@@ -1,0 +1,320 @@
+:root {
+    --color-1 : #FFDA77;
+    --color-2 : #AEE6E6;
+    --color-land-bg : #FBF6F0;
+    --color-land-txA : #FFA45B;
+    --color-land-txB : #333;
+}
+
+
+.work-land {
+    background-color: var(--color-land-bg);
+    padding: 70px;
+
+    .content-width{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr repeat(auto);
+        grid-template-areas:
+        "title main-images"
+        "main-logo main-images"
+        "tools main-images"
+        "ideas main-images"
+        "keywords main-images";
+        gap: 3vw;
+    }        
+    h2{ 
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: var(--color-land-txA);
+    }
+    .title { 
+        grid-area: title; 
+        text-align: right;
+        align-self: center;
+        h1{
+            font-size: 2.5rem;
+            padding-bottom: 15px;
+            color: var(--color-land-txA);
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: var(--color-land-txB);
+        }
+
+        .links{
+            display: flex;
+            justify-content: flex-end;
+            gap: 4%;
+            margin: 15px 0;
+        }
+        .links a {
+            font-size: 1.1rem;
+            font-weight: 300;
+            position: relative;
+            display: inline-block;
+        }
+        .links i{
+            font-size: 0.8rem;
+            color: var(--color-2);
+        }
+    
+        .links a:after {
+            content: "";
+            left: 0;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: var(--color-2);
+            bottom: -3px;
+            transform-origin: right top;
+            transform: scale(1, 1);
+            transition: 0.3s;
+          }
+          
+         .links a:hover::after {
+            transform-origin: right top;
+            transform: scale(0, 1);
+          }
+    }
+
+    .main-images { 
+        grid-area: main-images; 
+        img{
+            width: 100%;
+        }
+    }
+
+      
+
+    .main-logo { 
+        grid-area: main-logo; 
+        text-align: center;
+        img {
+            margin-top: 50px;
+            width: clamp(150px, 25vw, 800px);
+        }
+    }
+    .tools {
+        grid-area: tools; 
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: clamp(8px, 2vw, 15px);
+        }
+        li {
+            background-color: var(--color-land-txA);
+            padding: 3px 8px;
+            color: var(--color-land-bg);
+            border-radius: 8px;
+        }
+    }
+    .ideas { 
+        grid-area: ideas; 
+        p{color: var(--color-land-txB);}
+    }
+    .keywords { 
+        grid-area: keywords; 
+        padding-bottom: 30px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: clamp(8px, 2vw, 15px);
+        }
+        li {
+            list-style-type: "#";
+            list-style-position: inside;
+            color: var(--color-land-txA);
+        }
+    }
+}
+
+.targets {
+    .h2-target{
+        font-size: 2.2rem;
+        text-align: center;
+        background: linear-gradient(transparent 50%, var(--color-1) 50%);
+        width: fit-content;
+        padding: 0 20px;
+        margin: 40px auto;
+    } 
+    .target-cards {
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+        &>div{
+            width: 30%;
+        }
+    }
+    i{
+        color: #fff;
+    }
+    .shape{
+        width: fit-content;
+        padding: 15px;
+        margin: 5px auto 10px;
+        background-color: var(--color-1);
+        font-size: 1.4rem;
+    }
+    .shape1{
+        border-radius: 56% 44% 69% 31% / 36% 56% 44% 64%;
+    }
+    .shape2{
+        border-radius: 27% 73% 63% 37% / 55% 33% 67% 45%;
+    }
+    .h2-func{ 
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 4rem auto 15px;
+        padding: 15px;
+        width: 80vw;
+        position: relative;
+	    z-index: 2;
+    }
+    .h2-func::before {
+        content: attr(data-span);
+        position: absolute;
+        transform: rotate(-6deg);
+        top: -35px;
+        left: 25vw;
+        color: var(--color-1);
+        font-size: clamp(3.5rem, 3vw ,6rem);
+        font-family: "Gwendolyn", cursive;
+        z-index: -1;
+    }
+
+    ol {
+        position: relative;
+        counter-reset: my-counter;
+        li{
+            
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+            padding: 1rem 0 2rem;
+        }
+        li:before{
+            content: '0'counter(my-counter);
+            counter-increment: my-counter;
+            position: absolute;
+            font-family: "Gwendolyn", cursive;
+            background-color: #fff;
+            top: -2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: clamp(3.5rem, 3vw ,6rem);
+            color: var(--color-1);
+            z-index: -1;
+            
+        }
+        li:after{
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--color-1);
+            z-index: -2;
+        }
+    }
+}
+
+.video{
+    background-color: var(--color-2);
+
+    .content-width{
+        padding: 30px 0;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+        color: var(--color-land-bg);
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+    .video-container {
+        position: relative;
+        height: 0;
+        padding-top: 56.25%;
+        width:95%;
+        margin: 0 auto;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0; left: 0;
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+}
+
+
+.sitemap{
+    padding: 50px 0;
+    h2{
+        width: 100%;
+        text-align: center;
+        color: var(--color-2);
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+    img{
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+
+/* ***************************
+            DARK MODE
+   *************************** */
+   @media (prefers-color-scheme: dark) {
+    :root{
+        --color-1: #a9a1a1;
+    }
+}
+
+
+/* ***************************
+            MEDIA QUERIES
+   *************************** */
+@media (width < 700px) { 
+    :root{
+        --width-content: clamp(380px, 90%, 500px);
+    }
+    .work-land {
+        padding: 60px 0 0;
+        .content-width{
+            grid-template-rows: auto;
+            grid-template-areas:
+            "title title"
+            "main-logo main-images"
+            "tools tools"
+            "ideas ideas"
+            "keywords keywords";
+        
+            gap: 10px;
+        }
+        .main-logo{
+            margin-bottom: 30px;
+        }
+        .ideas{
+            margin-bottom: 40px;
+        }
+    }
+    .targets .target-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+        &>div{
+            width: 100%;
+        }
+    }
+}

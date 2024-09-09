@@ -293,7 +293,7 @@ nav .lang { /* Special setting for language menu */
 
     article.project1{
         grid-area: project1;
-        background-image: url(/img/project1.png);
+        background-image: url(/img/app1.png);
     }
 
     article.project2{
@@ -303,18 +303,30 @@ nav .lang { /* Special setting for language menu */
 
     article.project3{
         grid-area: project3;
-        background-image: url(/img/project3.png);
+        background-image: url(/img/app2.png);
     }
 
     article.project4{
         grid-area: project4;
-        background-image: url(/img/project4.png);
+        background-image: url(/img/project1.png);
     }
 
     .links{
         grid-area: link-web;
-        height: 200px;
-        background-color: white;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .links a{
+        color: var(--color-pine);
+        transition: 0.5s;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border: 2px solid var(--color-pine);
+    }
+    .links a:hover{
+        color: var(--color-green);
+        background-color: var(--color-pine);
     }
 }
 
@@ -324,13 +336,14 @@ nav .lang { /* Special setting for language menu */
    =========================== */
 
   #experience{
-    background: linear-gradient(0deg, #432a1e 84%, var(--color-lightBirch) 92%);
+    background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
   } 
 #experience .exp-bg{
     background-color: var(--color-lightBirch);
     padding-top: 100px;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    /* Angle in the bottom */
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0 95%);
     padding-bottom: 12rem;
     h3 {
         text-align: center;
@@ -378,6 +391,7 @@ nav .lang { /* Special setting for language menu */
     gap: 15px;
     grid-template-areas:
     "h4pro . h4edu"
+    "bak mid ."
     ". mid cie"
     "enc mid ."
     "enc mid psm"
@@ -399,6 +413,9 @@ nav .lang { /* Special setting for language menu */
     }
     h4:nth-of-type(2) {
         grid-area: h4edu;
+    }
+    .bake {
+        grid-area: bak;
     }
     .enagic {
         grid-area: enc;
@@ -520,11 +537,11 @@ nav .lang { /* Special setting for language menu */
     background-repeat: no-repeat;
     background-position: top center;
     position: relative;
-    .blur {
+/*    .blur {
          backdrop-filter: blur(5px); 
         background-color: #ffffff11;
         width: 100%;
-        padding-top: 3rem;    }
+        padding-top: 3rem;    }*/
     h3 {
         font-size: 3rem;
         text-align: center;
@@ -548,13 +565,105 @@ nav .lang { /* Special setting for language menu */
     }
     p {
         background-color: #e9e9e966;
-        mix-blend-mode: color-burn;
         font-size: 1rem;
         text-align: justify;
         padding: 20px 10px;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 }
+
+/* ==============================
+            PROJECT LIST PAGES
+   ============================== */
+
+#websitesList{
+    padding-top: 100px;
+    background-color: var(--color-lightBirch);
+    .list-project{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 100px;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 50px;
+        color: transparent;
+        background-image: linear-gradient(167deg, var(--color-darkWalnut) 0%, var(--color-green) 31%, var(--color-cherry) 100%);
+        background-clip: text;
+    }
+    h2{
+        font-family: var(--font-accent);
+        font-size: 2rem;
+        padding-bottom: 10px;
+        color: var(--color-green);
+    }
+    .list-project:nth-last-of-type(odd){
+        flex-direction: row-reverse;
+    }
+    .texts{
+        width: 60%;
+    }
+    .image{
+        width: 35%;
+    }
+    .keywords {
+        padding: 10px 0;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            background-color: var(--color-cherry);
+            color: #fff;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            padding: 3px 8px;
+        }
+    }
+
+    .more {
+        font-size: 1.1rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .more:after {
+        content: "";
+        left: 0;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background-color: var(--color-green);
+        bottom: -3px;
+        transform-origin: right top;
+        transform: scale(1, 1);
+        transition: 0.3s;
+      }
+      
+     .more:hover::after {
+        transform-origin: right top;
+        transform: scale(0, 1);
+      }
+
+    figure {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding-top: 75%;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+   
+}
+
 
 /* ===========================
             FOOTER
@@ -587,6 +696,8 @@ footer {
         text-align: center;
     }
 }
+
+
 
 /* ***************************
             DARK MODE
@@ -809,7 +920,7 @@ footer {
         
         article.project1{
             grid-area: project1;
-            background-image: url(/img/project1.png);
+            background-image: url(/img/app1.png);
         }
         
         article.project2{
@@ -819,12 +930,12 @@ footer {
         
         article.project3{
             grid-area: project3;
-            background-image: url(/img/project3.png);
+            background-image: url(/img/app2.png);
         }
         
         article.project4{
             grid-area: project4;
-            background-image: url(/img/project4.png);
+            background-image: url(/img/project1.png);
         }
         
         .links{
@@ -846,11 +957,10 @@ footer {
         width: 50%;
         margin: 0 2vw 4vw auto;
     }
-    /* REVERTING HERE */
 
     #experience .content-width {
         grid-template-columns: auto;
-        gap: 15px;
+        column-gap: 0;
         grid-template-areas:
         "h4pro"
         "enc"
@@ -877,46 +987,25 @@ footer {
 
     /* =======   ABOUT   ======= */
 
-    #about {
-        background-image: url("/img/bg-about.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        position: relative;
-        .blur {
-            backdrop-filter: blur(5px); 
-            background-color: #ffffff11;
-            width: 100%;
-            padding-top: 3rem;    }
-        h3 {
-            font-size: 3rem;
-            text-align: center;
-            color: #ffd89d;
-            position: absolute;
-            top: -5rem;
-            right: 50%;
-            transform: translate(50%,-50%);
-            width: 100%;
-            mix-blend-mode: difference;
-        }
-    }
-    #about .content-width{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
 
-        img {
-            width: 100%;
-            margin-bottom: 5px;
+    #about .content-width{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* =======   PROJECT LIST PAGE   ======= */
+    #websitesList{
+        .list-project{
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
         }
-        p {
-            background-color: #e9e9e966;
-            mix-blend-mode: color-burn;
-            font-size: 1rem;
-            text-align: justify;
-            padding: 20px 10px;
-            margin-bottom: 40px;
+        .list-project:nth-last-of-type(odd){
+            flex-direction: column-reverse;
+        }
+        .texts{
+            width: 100%;
+        }
+        .image{
+            width: 100%;
         }
     }
-    
 }

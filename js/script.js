@@ -34,5 +34,12 @@ function toggleNav() {
     body.classList.remove('nav-open');
   });
 
+  // Add event listener to each navigation link
+  var navLinks = document.querySelectorAll('nav ul li a');
+  navLinks.forEach(function(navLink) {
+    navLink.addEventListener('click', function() {
+      body.classList.remove('nav-open');
+    });
+  });
 }
 toggleNav();
