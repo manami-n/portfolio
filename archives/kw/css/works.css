@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	position: relative;
+}
+.paroller_visu{
+	background-image: url(../images/poses.jpg);
+	background-size:cover;
+	height: 90px;
+	padding-top: 410px;
+}
+.paroller_visu h1{
+	text-align:center;
+	font-family: 'Vampiro One', cursive;
+	color: #F5C870;
+	font-size: 72px;
+	opacity: 0.85;
+}
+.sec1{
+	width: 90vw;
+	margin: 238px auto;
+}
+.sec1 ul li{
+	float: left;
+	margin-right: 7vw;
+	margin-bottom: 20px;
+}
+.sec1 ul li img{
+		width: 25vw;
+		height: auto;
+}
+.sec1 ul li:nth-of-type(3n){
+	margin-right: 0;
+}
+
+
+/* modal */
+.modal {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  top:0;
+  left:0;
+  display:none;
+}
+
+.modalbg{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100vh;
+  z-index:10000;
+}
+	
+.modal-content{
+	max-width: 90vw;
+	position:fixed;
+  	z-index:10500;
+  	top:20%;
+	left: 8%;
+	
+  
+}
+.modal-header{
+	height: 50px;
+	text-align: right;
+}
+.modal-header .modalclose{
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-size: 72px;
+	
+}
+.modal-body .btn-prev{
+	margin-top: 162px;
+	background: transparent;
+	border: none;
+	float: left;
+}
+
+.modal-body .modal-main{
+	float: left;
+}
+.modal-body .modal-imgbox{
+	max-height: 476px;
+	max-width: 476px;
+	float: left;
+	margin: 0 32px;
+}
+.modal-body .modal-imgbox img{
+	max-height: 476px;
+	max-width: 476px;
+		height: 30vw;
+		width: 30vw;
+}
+.modal-body .modal-right{
+	float: right;
+	width: 35vw;
+}
+.modal-body .modal-right ul{
+	float: left;
+}
+.modal-body .modal-right ul li{
+	margin-bottom: 23px;
+}
+.modal-body .modal-right ul li img{
+	height: 122px;
+	width: 122px;
+}
+.modal-body .modal-right h2{
+	color: #F57C81;
+	font-size: 3vw;
+	line-height: 60px;
+	margin-left: 37px;
+	float: left;
+	}
+.modal-body .modal-right p{
+	clear: left;
+	color: #fff;
+	}
+.modal-body .btn-next{
+	margin-top: 162px;
+	background: transparent;
+	border: none;
+	float: left;
+}
+
+@media screen and (max-width:768px) {
+	
+.paroller_visu{
+	height: 50px;
+	padding-top: 130px;
+}
+.paroller_visu h1{
+		font-size: 10vw;
+}
+
+.sec1{
+	width: 90vw;
+	margin: 50px auto;
+}
+
+
+/* modal */
+.modal-content{
+  	top:0%;
+}
+
+
+.modal-header .modalclose{
+	font-size: 72px;
+	position: relative;
+	top: -10px;
+	right: -40px;
+	}
+.modal-body .btn-prev{
+	margin-top: 0px;
+	position: fixed;
+	bottom: 5%;
+	left: 10%;
+}
+
+.modal-body .modal-main{
+	float: none;
+}
+.modal-body .modal-imgbox{
+	max-height: 80vw;
+	max-width: 80vw;
+	float: none;
+	margin: 10px auto;
+}
+.modal-body .modal-imgbox img{
+		height: 80vw;
+		width: 80vw;
+}
+.modal-body .modal-right{
+	float: none;
+	width:80vw;
+}
+.modal-body .modal-right ul{
+	float: left;
+}
+.modal-body .modal-right ul li{
+	margin-bottom:10px;
+	float: left;
+}
+.modal-body .modal-right ul li img{
+	height: 80px;
+	width: 80px;
+}
+.modal-body .modal-right h2{
+	font-size: 6vw;
+	line-height: 150%;
+	margin-left: 0px;
+	float: right;
+	}
+.modal-body .modal-right p{
+	font-size: 13px;
+	line-height: 15px;
+	}
+.modal-body .btn-next{
+	margin-top: 0px;
+	position: fixed;
+	bottom:5%;
+	right: 10%;
+}
+.modal-body .btn-prev img, .modal-body .btn-next img{
+	width: 50%;
+	height: 50%;
+}

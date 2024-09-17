@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ORDERING FORM ■ KOKUBAN Wedding</title>
+  <link rel="icon" href="../fav.ico">
+  <link href="../css/cmn.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karma|Vampiro+One" rel="stylesheet">
+  <link href="../css/order_contact.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery.paroller.min.js"></script>
+  <script type="text/javascript" src="../js/ajaxzip3.js"></script>
+  <script src="../js/cmn.js"></script>
+  <script src="../js/order.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="../images/logo.png" width="214" height="130" alt="KOKUBAN Wedding"></div>
+    <aside class="nav_wrap">
+      <div class="nav_bg"></div>
+      <button type="button" class="burger_button"> <span class="bar bar1"></span> <span class="bar bar2"></span> <span
+          class="bar bar3"></span></button>
+      <nav class="nav_rightbg">
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../prices/index.html">Sizes &amp; Prices</a></li>
+          <li><a href="../works/index.html">Works</a></li>
+          <li><a href="../faq/index.html">FAQ</a></li>
+          <li><a href="../order/index.html">Order</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
+  <div class="paroller_visu">
+    <h1>Ordering Form</h1>
+  </div>
+  <section class="description">
+    <p>ご注文ありがとうございます。<br>
+      お客さまの情報を入力して、確認ボタンを押してください。<br>
+      <span>＊は必須項目です。</span></p>
+  </section>
+  <section class="sec1">
+    <!-- The form functionality has been removed as it is a demo website. -->
+    <form name="contactform" action="">
+      <div class="part1">
+        <h2>ご注文者様情報 </h2>
+        <table class="clearfix">
+          <tr>
+            <th><label for="name">お名前</label><span> ＊</span><br>
+              <p class="alert" id="dtname">お名前をご入力ください</p>
+            </th>
+            <td colspan="2"><input name="name" type="text" required id="name" value=""></td>
+          </tr>
+          <tr>
+            <th> <label for="email">メールアドレス</label><span> ＊</span>
+              <p class="alert" id="dtemail" value="">Ｅメールアドレスをご入力ください</p>
+            </th>
+            <td colspan="2"><input name="email" type="email" required id="email"> </td>
+          </tr>
+          <tr>
+            <th><label for="email2">メールアドレス（確認）</label><span> ＊</span>
+              <p class="alert" id="dtemail2" value="">Ｅメールアドレスをご確認ください</p>
+            </th>
+            <td colspan="2"><input name="email2" type="email" required id="email2"></td>
+          </tr>
+          <tr>
+            <th><label for="phone">お電話番号</label></th>
+            <td colspan="2"><input type="tel" name="phone" id="phone" value="" placeholder="例)03-0000-0000"></td>
+          </tr>
+          <tr>
+            <th>お届け先ご住所<span> ＊</span>
+              <p class="alert" id="dtzip">郵便番号は半角英数字でご記入ください</p>
+              <p class="alert" id="dtaddr">住所をご記入ください</p>
+            </th>
+            <td colspan="2">
+              <!-- ▼郵便番号入力フィールド(3桁+4桁) -->
+              〒
+              <input name="zip21" type="text" required size="4" maxlength="3" id="zip1"> － <input type="text" name="zip22"
+                size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');" id="zip2"><br>
+              <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+              <input name="addr21" type="text" required size="40" value="" placeholder="都道府県市区町村　例)東京都XX区" id="addr21">
+              <input name="addr3" type="text" required size="40" value="" placeholder="番地以下やマンション名　例)1-1-1" id="addr3">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="part2">
+        <h2>挙式情報 </h2>
+        <table class="clearfix">
+          <tr>
+            <th><label for="date">式のご予定日</label><span> ＊</span><br>
+              <p class="alert" id="dtdate">日程をお選びください</p>
+            </th>
+            <td colspan="2"><input name="date" type="date" required id="date" min="2018-11-30"></td>
+          </tr>
+          <tr>
+            <th><label for="concept">式のコンセプト</label></th>
+            <td colspan="2"><input type="text" name="concept" id="concept" value="" placeholder="例) 「ヒマワリの花」「ねこ」「ジャズ」など">
+            </td>
+          </tr>
+          <tr>
+            <th><label for="color">式のイメージカラー</label></th>
+            <td>
+              <input type="color" name="example" list="datacolor1" value="#ffffff" id="color1">
+
+              <datalist id="datacolor1">
+                <option value="#ffffff"></option>
+                <option value="#F4D573"></option>
+                <option value="#FF7E27"></option>
+                <option value="#b2220f"></option>
+                <option value="#F67D82"></option>
+                <option value="#9b084e"></option>
+                <option value="#B767AC"></option>
+                <option value="#66CBDF"></option>
+                <option value="#2A3CDD"></option>
+                <option value="#00a497"></option>
+                <option value="#BBD893"></option>
+                <option value="#538C48"></option>
+                <option value="#BFA486"></option>
+                <option value="#664627"></option>
+                <option value="#000000"></option>
+              </datalist>
+              <select name="color_pulldown1" id="color_pulldown1">
+                <option selected value="none">--</option>
+                <option value="white">ホワイト</option>
+                <option value="yellow">イエロー</option>
+                <option value="orange">オレンジ</option>
+                <option value="red">レッド</option>
+                <option value="pink">ピンク</option>
+                <option value="wine">ワイン</option>
+                <option value="purple">紫</option>
+                <option value="light-blue">水色</option>
+                <option value="blue">ブルー</option>
+                <option value="blue-green">青緑</option>
+                <option value="light-green">黄緑</option>
+                <option value="green">グリーン</option>
+                <option value="beige">ベージュ</option>
+                <option value="brown">ブラウン</option>
+                <option value="black">ブラック</option>
+              </select>
+            </td>
+            <td>
+              <input type="color" name="example" list="datacolor1" value="#ffffff" id="color2">
+              <select name="color_pulldown2" id="color_pulldown2">
+                <option selected value="none">--</option>
+                <option value="white">ホワイト</option>
+                <option value="yellow">イエロー</option>
+                <option value="orange">オレンジ</option>
+                <option value="pink">ピンク</option>
+                <option value="red">レッド</option>
+                <option value="purple">紫</option>
+                <option value="light-blue">水色</option>
+                <option value="blue">ブルー</option>
+                <option value="light-green">黄緑</option>
+                <option value="green">グリーン</option>
+                <option value="beige">ベージュ</option>
+                <option value="brown">ブラウン</option>
+                <option value="black">ブラック</option>
+              </select></td>
+          </tr>
+          <tr>
+            <th><label for="couplereq">その他</label></th>
+            <td colspan="2"><textarea name="weddingreq" id="weddingreq" placeholder="式場名などボードに入れたい情報があればこちらへ"></textarea></td>
+          </tr>
+        </table>
+      </div>
+      <div class="part3">
+        <h2>お2人について </h2>
+        <table class="clearfix">
+          <tr>
+            <th>載せたいお名前<span> ＊</span><br>
+              <p class="alert" id="dtnames">お名前をご入力ください</p>
+            </th>
+            <td><label for="groom">新郎さま</label>
+              <input name="groom" type="text" required id="groom" value="" placeholder="半角英数字"></td>
+            <td><label for="bride">新婦さま</label>
+              <input name="bride" type="text" required id="bride" value="" placeholder="半角英数字"></td>
+          </tr>
+          <tr>
+            <th> <label for="charas">お2人のイメージ</label></th>
+            <td colspan="2"><textarea name="charas" maxlength="300" id="charas" placeholder="例) 「活発でスポーツが好きな新郎を優しくサポートする新婦」
+「食いしん坊の新婦とカウチポテトの新郎」など"></textarea></td>
+          </tr>
+          <tr>
+            <th><label for="couplereq">その他ご要望</label></th>
+            <td colspan="2"><textarea name="couplereq" id="couplereq"></textarea></td>
+          </tr>
+          <tr>
+            <th>お写真添付<br>
+              <p class="alert" id="dtfile">ファイルの種類とサイズをご確認ください</p>
+            </th>
+            <td colspan="2">
+              <p class="filetext">お二人のお写真、結婚式のイメージ画像、ドレスの写真など。<br>
+                後日メールでもお送りいただけます。<br>
+                各ファイル3MBまで、.jpg .gif .pngでお願いします。</p><input name="file1" type="file" id="file1" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png">
+              <input name="file2" type="file" id="file2" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png">
+              <input name="file3" type="file" id="file3" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <input name="cfm" class="button" id="cfm" value="確認">
+    </form>
+  </section>
+  <footer><small>Copyright © KOKUBAN Wedding All Rights Reserved.</small></footer>
+</body>
+
+</html>

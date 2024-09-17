@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+.paroller_visu{
+	background-image: url(../images/faq_visual.jpg);
+	background-size:cover;
+	height: 90px;
+	padding-top: 410px;
+}
+.paroller_visu h1{
+	text-align:center;
+	font-family: 'Vampiro One', cursive;
+	color: #66CBDF;
+	font-size: 72px;
+	opacity: 0.85;
+}
+.description{
+	text-align:center;
+	padding-top: 85px;
+	padding-bottom: 60px;
+}
+.description p{
+	line-height: 30px;
+}
+.description p a{
+	color: #66CBDF;
+}
+.sec1{
+	width: 780px;
+	margin: 0 auto 85px;
+	}
+.sec1 dt{
+	background-color: #F67D82;
+	margin-top: 35px;
+	}
+.sec1 dt:nth-of-type(2n){
+	background-color: #66CBDF;
+}
+.sec1 dt h2{
+	font-size: 20px;
+	color: #2c2c2c;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: normal;
+	display:inline-block;
+	float: left;
+}
+.sec1 dd{
+	padding: 30px 30px 30px 80px;
+	background-color: #F67D82;
+	line-height: 30px;
+		}
+.sec1 dd:nth-of-type(2n){
+	background-color: #66CBDF;
+}
+/*　アコーディオンアイコン　*/
+.accordion_icon,
+.accordion_icon span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.accordion_icon {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 15px 23px;
+	float: left;
+	background-color: #2f2f2f;
+}
+.accordion_icon span {
+	position: absolute;
+    left: 10px;
+    width: 50%;
+	height: 2px;
+    background-color: #fff;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+.accordion_icon span:nth-of-type(1) {
+    top: 20px;
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.accordion_icon span:nth-of-type(2) {
+    top: 20px;
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+/*＋、－切り替え*/
+.accordion_icon.active span:nth-of-type(1) {
+	display:none;
+}
+.accordion_icon.active span:nth-of-type(2) {
+	top: 20px;
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+@media screen and (max-width:768px) {
+	
+	.paroller_visu{
+	height: 50px;
+	padding-top: 130px;
+}
+.paroller_visu h1{
+		font-size: 10vw;
+}
+.description{
+	text-align:center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.sec1{
+	width:100vw;
+	}
+.sec1 dt{
+	background-color: #F67D82;
+	margin-top: 20px;
+	}
+.sec1 dt:nth-of-type(2n){
+	background-color: #66CBDF;
+}
+.sec1 dt h2{
+	font-size: 4.5vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.sec1 dd{
+	padding: 15px 20px;
+		}
+/*　アコーディオンアイコン　*/
+.accordion_icon,
+.accordion_icon span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.accordion_icon {
+	margin: 10px 15px;
+}
+}

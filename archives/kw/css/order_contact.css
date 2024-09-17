@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+.paroller_visu{
+	background-image: url(../images/ordercontact_visual.jpg);
+	background-size:cover;
+	height: 90px;
+	padding-top: 410px;
+}
+.paroller_visu h1{
+	text-align:center;
+	font-family: 'Vampiro One', cursive;
+	color: #BCD994;
+	font-size: 72px;
+	opacity: 0.85;
+}
+.description{
+	text-align:center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.description p{
+	margin: 12px;
+	line-height: 30px;
+}
+
+.sec1{
+	width: 780px;
+	margin: 0 auto 91px;
+	
+}
+.sec1 h2{
+	font-size: 24px;
+	line-height: 45px;
+	color: #F6C971;
+	font-weight: normal;
+	padding-left: 30px;
+	
+	background-color: #2b2b2b;
+	margin-bottom: 20px;
+	}
+.sec1 .part2 h2{
+	color: #66cbdf;
+}
+.sec1 .part3 h2{
+	color: #bcd994;
+}
+.sec1 .part4 h2{
+	color: #f67d82;
+}
+.sec1 table{
+	width: 750px;
+	margin: 0 auto 30px;
+	border-collapse:collapse;
+		}
+.sec1 .part3{
+	margin-bottom: 90px;
+}
+.sec1 tr{
+	border-bottom: solid 1px #F6C971;
+}
+.sec1 .part2 tr{
+	border-bottom: solid 1px #66cbdf;
+}
+.sec1 .part3 tr{
+	border-bottom: solid 1px #bcd994;
+}
+.sec1 .part4 tr{
+	border-bottom: solid 1px #f67d82;
+}
+.sec1 tr:last-child{
+	border-bottom: none;
+}
+.sec1 th{
+	clear:left;
+	width: 242px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+	color: #2b2b2b;
+	}
+
+.sec1 th .alert{
+	color: #F67D82;
+	font-size: 12px;
+	line-height: 12px;
+}
+.sec1 td{
+	padding: 7px auto;
+	}
+.sec1 td input{
+	width: 400px;
+	height: 25px;
+	margin: 15px 0;
+	padding: 5px 10px;
+	border: none;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: #F2F2F2;
+}
+.sec1 td textarea{
+	width: 400px;
+	height: 200px;
+	margin: 15px 0;
+	padding: 5px 10px;
+	border:none;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: #F2F2F2;
+}
+
+/* 個別サイズ指定*/
+
+.sec1 #zip1{
+	width: 42px;
+}
+.sec1 #zip2{
+	width: 58px;
+}
+.sec1 #groom, .sec1 #bride{
+	width: 180px;
+}
+.sec1 .filetext{
+	margin-top:13px;
+	font-size: 14px;
+}
+.sec1 #file1, .sec1 #file2, .sec1 #file3{
+	background-color: transparent;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.sec1 #color1, .sec1 #color2{
+	width: 180px;
+	height: 50px;
+}
+.sec1 #color_pulldown1, .sec1 #color_pulldown2{
+    width: 180px;
+	margin: 15px 0;
+	padding: 5px 10px;
+	border-radius: 4px;
+	background-color: #F2F2F2;
+	border:none;
+}
+
+/*ボタン*/
+
+.sec1 .button{
+	margin: 0 auto;
+	display:block;
+	background-color: #2b2b2b;
+	font-size: 16px;
+	color: #f67d82;
+	padding: 17px 65px;
+	border:none;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 5px rgba(70,93,76, 0.6);
+}
+.sec1 .button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+span{
+	color: #F67D82;
+}
+
+@media all and (-ms-high-contrast: none) {
+ .sec1 #color1, .sec1 #color2{
+	display:none;
+}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .sec1 #color_pulldown1, .sec1 #color_pulldown2{
+	  display:none;
+}
+}
+
+
+/*モバイル */
+@media screen and (max-width:768px) {
+
+.paroller_visu{
+	height: 50px;
+	padding-top: 130px;
+}
+.paroller_visu h1{
+		font-size: 10vw;
+}
+
+.sec1{
+	width: auto;
+}
+.sec1 table{
+	width: 100vw;
+}
+.sec1 th{
+	width: 100vw;
+	display:block;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 0;
+	margin-right:0;
+	box-sizing: border-box;
+		}
+
+.sec1 td{
+	padding: 7px 0 7px 10px ;
+	display:block;
+	width: 100vw;
+	box-sizing:border-box;
+	}
+.sec1 td input{
+	width: 90vw;
+	}
+.sec1 td textarea{
+	width: 90vw;
+	}
+
+/* 個別サイズ指定*/
+
+.sec1 #groom, .sec1 #bride{
+	margin-left: 15px;
+	}
+.sec1 .filetext, p{
+	width: 95vw;
+	font-size: 13px;
+	}
+.sec1 #color1, .sec1 #color2{
+	width: 70vw;
+	height: 50px;
+	}
+.sec1 #color2{
+	margin-top:0;
+}
+.sec1 #color_pulldown1, .sec1 #color_pulldown2{
+    width: 90vw;
+	}
+}

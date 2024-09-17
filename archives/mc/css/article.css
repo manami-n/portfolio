@@ -1,0 +1,431 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*　PC版　*/
+.visual{
+  width: 100vw;
+  height: 379px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.visual img{
+  width: 100vw;
+}
+
+
+h1{
+	font-size: 36px;
+	line-height: 42px;
+	margin:20px 0 50px ;
+    color: #845A31;
+	display:flex;
+    flex-basis: auto;
+    width: 100%;
+}
+h1:after{
+    content:"";
+    display: block;
+    height: 4px;
+   background: linear-gradient(90deg, rgba(148,163,44,1), rgba(224,217,180,0.8) 74%, rgba(225,225,225,0));
+   margin: 17px 0px 17px 20px;
+   flex:1;
+}
+
+
+h2{
+	margin-left:419px;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 16px;
+}
+
+.outer{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+article{
+  position: relative;
+  margin-bottom: 60px;
+}
+
+article img{
+	position:absolute;
+	top: 0;
+	left:0;
+    z-index: 10;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+	min-height: 315px;
+	padding: 20px 47px;
+	-webkit-box-shadow: 0px 2px 5px rgba(70,93,76, 0.6);
+	box-sizing: border-box;
+}
+
+.box p{
+    margin-left: 369px;
+	width: 480px;
+	line-height: 38px;
+	}
+
+/*　レシピ用　*/
+
+
+.box dl{
+	width: 480px;
+    margin-left: 369px;
+	min-height: 275px;
+    line-height: 3;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    }
+.box dl dt{
+   border-bottom: 1px solid #B4A582;
+  width: 50%;
+}
+.box dl dd{
+   border-bottom: 1px solid #B4A582;
+   width: 50%;
+  text-align: right;
+
+}
+
+.box ol{
+    width: 849px;
+	line-height: 3;
+}
+.box ol:first-child{
+    width: 480px;
+    margin-left: 369px;
+    line-height: 3;
+}
+.box ol li{
+	list-style:decimal;
+	border-bottom: 1px solid #B4A582;
+}
+
+/* レシピのSNS　*/
+
+.snsbg{
+	padding-top: 25px;
+	padding-bottom: 100px;
+	background: #E5E2E1;
+}
+.snsbg h1{
+	text-align: center;
+	position: relative;;
+	display: block;
+	padding: 0 45px;
+	margin: 40px auto;
+	color: #887c54;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.snsbg h1:before{
+content: '';
+position: relative;
+top: 50%;
+left:0;
+display: inline-block;
+width: 44px;
+height: 2px;
+background-color: #887C54;
+-moz-transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+transform: rotate(60deg);
+}
+.snsbg h1:after{
+content: '';
+position: relative;
+top: 50%;
+right: 0;
+display: inline-block;
+width: 44px;
+height: 2px;
+background-color: #887C54;
+-moz-transform: rotate(-60deg);
+-webkit-transform: rotate(-60deg);
+-ms-transform: rotate(-60deg);
+transform: rotate(-60deg);
+}
+
+.snsbg .innerbox{
+	margin: 0 auto;
+	width: 880px;
+    display: flex;
+    justify-content: space-between;
+	}
+
+.insta ul{
+	width: 250px;
+  	font-size: 16px;
+	margin: 50px auto 40px;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+.insta ul li{
+  margin-top: auto;
+}
+
+.insta .widget{
+	height: 413px;
+	width: 400px;
+	padding-top: 6px;
+	margin-bottom: 80px;
+
+}
+
+.insta #fb_widgetSP{
+    display: none;
+  }
+}
+
+/* アニメーション */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+	 -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:0.7s;
+ -ms-animation-duration:0.7s;
+ animation-duration:0.7s;
+  -webkit-animation-delay:0.7s;
+ -ms-animation-delay:.7s;
+ animation-delay:.7s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  visibility: visible !important;
+}
+
+.fadeInRight {
+	 -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:0.7s;
+ -ms-animation-duration:0.7s;
+ animation-duration:0.7s;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+   visibility: visible !important;
+}
+
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+	-webkit-transform: translateX(40px); }
+ 100% { }
+  }
+
+  to {
+     opacity: 1;
+	  -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    transform:translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+
+/*
+
+スマホ用
+
+*/
+@media screen and (max-width:750px) {
+
+h1{
+	font-size: vw;
+	line-height: 1.16;
+	margin:3vw 0 7.8vw ;
+    color: #845A31;
+	display:flex;
+    flex-basis: auto;
+}
+h1:after{
+    content:"";
+    display: inline-block;
+    height: 4px;
+   background: linear-gradient(90deg, rgba(148,163,44,1), rgba(224,217,180,0.8) 74%, rgba(225,225,225,0));
+   margin: 2.6vw 0px 2.6vw 3.1vw;
+   width: 30%;
+}
+
+.visual{
+	height: 28vw;
+	margin-bottom: 9.3vw;
+}
+  .outer{
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  article{
+    margin-bottom: 3.1vw;
+  }
+
+  article img{
+    display: block;
+    position:static;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  h2{
+    margin-left: 0;
+    margin-top: 1.5vw;
+  }
+
+
+  .box{
+	padding: 3.1vw 1.5vw;
+	box-shadow: none;
+}
+
+
+ .box p{
+    margin-left: 0;
+    width: auto;
+	}
+
+/* レシピ用　*/
+
+.box dl{
+	width: 100%;
+    margin-left: 0;
+	min-height: auto;
+    line-height: 2;
+    margin-bottom: 6.2vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    }
+.box dl dt{
+   border-bottom: 1px solid #B4A582;
+  width: 50%;
+}
+.box dl dd{
+   border-bottom: 1px solid #B4A582;
+   width: 50%;
+  text-align: right;
+}
+
+.box ol{
+    width: 100%;
+	line-height: 2;
+}
+.box ol:first-child{
+    width: 100%;
+    margin-left:0;
+    line-height: 2;
+}
+
+/* レシピのSNS　*/
+
+.snsbg{
+	padding-top: 4vw;
+	padding-bottom: 15.6vw;
+	background: #E5E2E1;
+}
+.snsbg h1{
+	text-align: center;
+	position: relative;;
+	display: block;
+	padding: 0;
+	margin: 6.2vw auto;
+	color: #887c54;
+	font-size: 3.7vw;
+	line-height: 1.16;
+}
+
+.snsbg h1:before{
+content: '';
+display: none;
+}
+
+.snsbg h1:after{
+content: '';
+display: none;
+  }
+
+.snsbg .innerbox{
+	margin: 0 auto;
+	width: auto;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	}
+
+  .snsbg section{
+    margin: 0 auto;
+  }
+.insta ul{
+	width: 250px;
+  	font-size: 16px;
+	margin: 50px auto 40px;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+.insta ul li{
+  margin-top: auto;
+}
+
+.insta .widget{
+	height: auto;
+	width: 100%;
+	padding-top: 6px;
+    margin-bottom: 12.5vw;
+}
+
+  .insta #fb_widget{
+    display: none;
+  }
+    .insta #fb_widgetSP{
+    display: block;
+  }
+}

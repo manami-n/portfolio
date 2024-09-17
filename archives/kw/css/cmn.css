@@ -1,0 +1,180 @@
+@charset "utf-8";
+body, h1, h2, h3, p, ul, li, dl, dt, dd, th,td {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+img {
+	vertical-align: bottom;
+}
+body {
+	color: #2B2B2B;
+	font-family: 'Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.logo {
+	position: fixed;
+	left: 36px;
+	top: 25px;
+	z-index: 10000;
+}
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+a {
+	text-decoration:none;
+	color: inherit;
+}
+/* ここからナビアニメーション */
+aside {
+	position: fixed;
+	height: 100vh;
+	top: 0px;
+	right: 0px;
+	background-color: rgba(222,222,222,0.4);
+	margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+  z-index: 20000;
+}
+.nav_wrap .nav_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: transparent;
+  display: block;
+  top: 0;
+  left: 0;
+  display:none;
+}
+.nav_wrap .burger_button {
+  display: block;
+  background: #2b2b2b;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 2000;
+  text-align: center;
+  outline: none;
+
+}
+.nav_wrap .burger_button.active .bar {
+  width: 47px;
+}
+.nav_wrap .burger_button.active .bar1 {
+  transform: rotate(30deg);
+}
+.nav_wrap .burger_button.active .bar2 {
+  opacity: 0;
+}
+.nav_wrap .burger_button.active .bar3 {
+  transform: rotate(-30deg);
+}
+.nav_wrap .bar {
+  display: block;
+  height: 2px;
+  margin: 10px 5px;
+  transition: all 0.2s;
+  transform-origin: 0 0;
+  background-color: #fff;
+}
+
+.nav_wrap .nav_rightbg {
+  width: 300px;
+  height: 100%;
+  transition: all 0.2s;
+  transform: translate(300px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(238,238,238,0.4);
+}
+
+.nav_wrap .nav_rightbg.open {
+  transform: translate(0);
+}
+
+.nav_wrap nav .nav{
+  padding: 100px 0 0 0;
+}
+
+.nav_wrap .nav li {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: 'Vampiro One', cursive;
+  font-size:36px;
+  line-height: 76px;
+  padding-left: 15px;
+  z-index: 2500;
+  color:#65CADE;
+}
+
+.nav_wrap .nav li:nth-of-type(even){
+	color: #F57C81;
+}
+.nav_wrap .nav li:hover{
+	background-color: #2b2b2b;
+	color:#fff;
+}
+
+/* ここまでナビアニメーション */
+
+
+/* Footer*/
+
+footer{
+	background-color: #2b2b2b;
+	text-align:center;
+}
+footer small{
+	color: #fff;
+	opacity: .9;
+}
+
+
+/*モバイル */
+@media screen and (max-width:768px) {
+.logo {
+	left: 10px;
+	top: 10px;
+	z-index: 10000;
+}
+.logo img{
+	width: 30vw;
+	height:auto;
+	}
+
+.nav_wrap .burger_button {
+  top: 15px;
+  right: 15px;
+}
+
+.nav_wrap .nav_rightbg {
+  width: 100%;
+  transform: translate(100%);
+  background-color: rgba(238,238,238,0.9);
+}
+
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FAQ ■ KOKUBAN Wedding</title>
+  <link rel="icon" href="../fav.ico">
+  <link href="../css/cmn.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karma|Vampiro+One" rel="stylesheet">
+  <link href="../css/faq.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery.paroller.min.js"></script>
+  <script src="../js/cmn.js"></script>
+  <script>
+    $(function(){
+	//Paroller背景用
+	$(".paroller_visu, [data-paroller-factor]").paroller({
+		factor: 0.5,
+		factorXs: 0.2,
+	});
+
+	//アコーディオン動き
+
+	//最初は全てのパネルを非表示に
+	$('#panel > dd').hide();
+
+	$('#panel > dt').click(function(e){
+	 //選択したパネルを開く
+	$('+dd', this).slideToggle(500);
+
+   	//アコーディオン＋ －
+
+	// activeが存在する場合
+		if ($(this).children(".accordion_icon").hasClass('active')) {
+			// activeを削除
+			$(this).children(".accordion_icon").removeClass('active');
+		}
+		else
+		{
+			// activeを追加
+			$(this).children(".accordion_icon").addClass('active');
+		}
+		return false;
+	});
+
+	//タイトル
+
+    var $allMsg = $('h1');
+    var $wordList = $('h1').html().split("");
+    $('h1').html("");
+    $.each($wordList, function(idx, elem) {
+        var newEL = $("<span/>").text(elem).css({ opacity: 0 });
+        newEL.appendTo($allMsg);
+        newEL.delay(idx * 70);
+        newEL.animate({ opacity: 1 }, 1100);
+    });
+});
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="../images/logo.png" width="214" height="130" alt="KOKUBAN Wedding"></div>
+    <aside class="nav_wrap">
+      <div class="nav_bg"></div>
+      <button type="button" class="burger_button"> <span class="bar bar1"></span> <span class="bar bar2"></span> <span
+          class="bar bar3"></span></button>
+      <nav class="nav_rightbg">
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../prices/index.html">Sizes &amp; Prices</a></li>
+          <li><a href="../works/index.html">Works</a></li>
+          <li><a href="../faq/index.html">FAQ</a></li>
+          <li><a href="../order/index.html">Order</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </header>
+  <div class="paroller_visu">
+    <h1>FAQ</h1>
+  </div>
+  <section class="description">
+    <p>よくある質問をまとめました。<br>
+      こちらで疑問が解決しない場合は、お手数ですが<a href="../contact/index.html">お問い合わせ</a>ページよりご質問ください。</p>
+  </section>
+  <section class="sec1">
+    <dl id="panel">
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>どのくらいの期間でできますか？ </h2>
+      </dt>
+      <dd>混雑具合にもよりますが、注文してからお届けまでおよそ１ヶ月程度です。<br>
+        時間のない方は状況によってできるだけ早く製作いたしますので、まずはお問い合わせください。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>素材は何ですか？</h2>
+      </dt>
+      <dd>木製ではなく、7mm厚の高密度発砲スチロールのパネル版にマット印刷(つや消し)で<br>
+        黒板調の印刷をしてあるものです。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>キャンセルはできますか？</h2>
+      </dt>
+      <dd>下絵完成後のお支払い期限までに限りメールにてキャンセル可能です。<br>
+        下絵完成後は注文確定となってしまうため、申し訳ありませんが基本的にキャンセルはお受けかねます。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>消費税・送料はかかりますか？</h2>
+      </dt>
+      <dd>8％の消費税はかかっており、商品ページの金額欄に記載されております。<br>
+        送料は離島を含め全国無料です。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>支払い方法は何がありますか？</h2>
+      </dt>
+      <dd>現在、銀行振り込みとPaypalのみ受け付けております。<br>
+        振り込み手数料はお客さま負担でお願いしております。<br>
+        銀行は楽天銀行となります。Paypalのアカウントをお持ちであれば、Paypalを通してクレジットカードでもお支払いいただけます。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>どのように送られてきますか？</h2>
+      </dt>
+      <dd>スタンダードサイズのものは、ボードより大きいサイズのボール紙に二重に挟まれて配送されます。<br>
+        通常は佐川急便で配送されますが、地域や日程により他会社で配送されます旨ご了承ください。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>配達の日時指定はできますか？</h2>
+      </dt>
+      <dd>申し訳ありません。日時指定はお受けしておりません。<br>
+        お受け取りのできない曜日の指定のみ可能ですので、注文時もしくは注文後にご連絡ください。</dd>
+      <dt class="clearfix">
+        <p class="accordion_icon"><span></span><span></span></p>
+        <h2>友人へのギフトです。納品書や請求書は同封されますか？</h2>
+      </dt>
+      <dd>納品書や明細書、お値段の分かるものは一切同封しておりません。<br>
+        ご注文者様のご住所を頂ければ、そちらに別途納品書や領収書を郵送することも可能ですのでご連絡ください。</dd>
+    </dl>
+  </section>
+  <footer><small>Copyright © KOKUBAN Wedding All Rights Reserved.</small></footer>
+</body>
+
+</html>

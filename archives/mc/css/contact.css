@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+.visual{
+  width: 100vw;
+  height: 379px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.visual img{
+  width: 100vw;
+}
+
+.outer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1{
+	font-size: 36px;
+	line-height: 42px;
+	margin:20px 0 50px ;
+    color: #845A31;
+	display:flex;
+    flex-basis: auto;
+    width: 100%;
+}
+h1:after{
+    content:"";
+    display: block;
+    height: 4px;
+   background: linear-gradient(90deg, rgba(148,163,44,1), rgba(224,217,180,0.8) 74%, rgba(225,225,225,0));
+   margin: 17px 0px 17px 20px;
+   flex:1;
+}
+
+.contact_box{
+	padding: 60px 0 55px;
+    width: 100%;
+	-webkit-box-shadow: 0px 2px 5px rgba(70,93,76, 0.6);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.flex{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact_box .text{
+	width: 80%;
+	margin: 0 10% 60px;
+	line-height: 2.5;
+	}
+.contact_box span{
+	color: #C1272D;
+}
+.contact_box dl{
+	width: 80%;
+	margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact_box .cfm dd{
+    display: flex;
+	align-items:center;
+}
+.contact_box dt{
+	width: 35%;
+	height: 56px;
+	padding-top: 18px;
+
+	}
+.contact_box dt p{
+	color: #c1272D;
+    font-size: 12px;
+}
+.contact_box dd{
+   width:65%;
+   align-items:center;
+}
+.contact_box dd input{
+	width: 100%;
+	height: 44px;
+	margin: 15px 0;
+	padding: 5px 10px;
+	border: 1px solid #A49F50;
+	box-sizing: border-box;
+	border-radius: 2px;
+	background-color: #F2F2F2;
+}
+.contact_box dd textarea{
+	width: 100%;
+	height: 200px;
+	margin: 15px 0;
+	padding: 5px 10px;
+	border: 1px solid #A49F50;
+	box-sizing: border-box;
+	border-radius: 2px;
+	background-color: #F2F2F2;
+}
+
+.contact_box dl+p{
+	padding-top: 45px;
+}
+.contact_box .btnwrap{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.contact_box .button{
+    margin: 0 auto;
+	display:block;
+	background-color: #93A22B;
+	font-size: 16px;
+	color: #fff;
+	padding: 17px 65px;
+	border:none;
+	border-radius: 4px;
+	text-align: center;
+	-webkit-box-shadow: 0px 2px 5px rgba(70,93,76, 0.6);
+}
+.contact_box .button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.company dt{
+	width: 20%;
+	padding-top:0px;
+}
+/* スマホ　
+*/
+@media screen and (max-width:750px) {
+.visual{
+	height: 180px;
+	margin-bottom: 60px;
+}
+
+h1{
+	margin-bottom: 10px;
+}
+.h1border{
+	height: 4px;
+	margin:10px 0px;
+	width: 40%;
+}
+
+.contact_box{
+	-webkit-box-shadow: none;
+	}
+
+.contact_box dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact_box dt{
+	width: 100%;
+	}
+
+.contact_box dd{
+	width: 80vw;
+}
+
+
+}

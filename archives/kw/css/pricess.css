@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+.paroller_visu{
+	background-image: url(../images/about_visual.jpg);
+	background-size:cover;
+	height: 90px;
+	padding-top: 410px;
+}
+.paroller_visu h1{
+	text-align:center;
+	font-family: 'Vampiro One', cursive;
+	font-size: 72px;
+	opacity: 0.85;
+}
+.description{
+	text-align:center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.description p{
+	margin: 12px;
+	line-height: 30px;
+}
+.sec1{
+	background-color: #2b2b2b;
+}
+.sec1 h2{
+	font-size: 36px;
+	padding-top: 36px;
+	padding-bottom: 40px;
+	color: #F57C81;
+	text-align:center;
+	font-weight: normal;
+}
+.sec1 ul{
+	max-width: 650px;
+	margin: 0 auto;
+}
+.sec1 ul li{
+	float: left;
+}
+.sec1 ul li+li{
+	margin-left: 42px;
+}
+.sec1 .text{
+width: 1000px;
+margin: 0 auto;
+}
+.sec1 p{ margin-bottom: 30px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;}
+.sec1 .left{
+	text-align:right;
+	float:left;
+	margin-left: 40px;
+}
+.sec1 .right{
+	float: left;
+	margin-left: 42px;
+}
+.sec2 {height: 700px;}	
+.sec2 h2{
+	font-size: 36px;
+	color: #65CADE;
+	font-weight: normal;
+	margin-top: 75px;
+	margin-left: 10vw;
+}
+.sec2 .sub{
+	font-size:14px;
+	color: #F57C81;
+	margin-left: 8.5vw;
+}
+.slider-container {
+  width:351px;
+  margin: 15px auto;
+}
+
+.sec2 .slider div{
+	width: 351px;
+	height: 440px;
+}
+.sec2 .slider div p{
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+}
+.sec3 {
+	background-image:url(../images/about_bg.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+}
+.sec3 .inner{
+	background-color: #2b2b2b;
+	width: 980px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.sec3 h2{
+	font-size: 36px;
+	padding-top: 36px;
+	padding-bottom: 40px;
+	color: #BBD893;
+	text-align:center;
+	font-weight: normal;
+}
+.sec3 p{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	}
+.sec3 .box1 p{
+	float:left;
+	}
+.sec3 .box1 .img{margin-right: 28px;
+}
+.sec3 .box1 p+p{
+	margin-top: 22px;
+}
+.sec3 .box2 p{
+	float:right;
+	text-align: right;
+	padding-bottom: 20px;
+}
+.sec3 .box2 .img{
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
+.sec3 .box3{
+	padding-bottom: 45px;
+}
+.sec3 .box3 p{
+	text-align: center;
+}

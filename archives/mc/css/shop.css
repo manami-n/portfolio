@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+.visual{
+	background: url(../images/index_slide5.png) center center no-repeat;
+	background-size: cover;
+	height: 379px;
+	margin-bottom: 60px;
+}
+.content{
+	padding-top: 60px;
+	padding-bottom: 55px;
+	-webkit-box-shadow: 0px 2px 5px rgba(70,93,76, 0.6);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.content p{
+	width: 685px;
+	margin: 0 auto 60px;
+	line-height: 24px;
+	}
+.content ul{
+	width: 685px;
+	margin: 0 auto;}
+.content li{
+	line-height: 18px;
+}
+.content li img{
+	transform:rotate(90deg);
+}
+
+.blog {width:700px;
+		margin: auto;}
+	 
+@media screen and (max-width:750px) {
+	.visual{
+	height: 180px;
+	margin-bottom: 60px;
+}
+
+	.content p{
+	width: 90vw;
+	margin: 0 auto 60px;
+	line-height: 24px;
+	}
+	.content ul{
+	width: 90vw;
+	}
+}
