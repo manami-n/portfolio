@@ -293,22 +293,22 @@ nav .lang { /* Special setting for language menu */
 
     article.project1{
         grid-area: project1;
-        background-image: url(/img/app1.png);
+        background-image: url(/img/app1.avif);
     }
 
     article.project2{
         grid-area: project2;
-        background-image: url(/img/project2.png);
+        background-image: url(/img/project2.avif);
     }
 
     article.project3{
         grid-area: project3;
-        background-image: url(/img/app2.png);
+        background-image: url(/img/app2.avif);
     }
 
     article.project4{
         grid-area: project4;
-        background-image: url(/img/project1.png);
+        background-image: url(/img/project1.avif);
     }
 
     .links{
@@ -704,7 +704,7 @@ footer {
    *************************** */
 @media (prefers-color-scheme: dark) {
     :root{
-        --color-lightBirch: #7b7373;
+        --color-lightBirch: #cdb8b8;
     }
     #projects .content-width h3, #experience .exp-bg h3, #experience h4 {
         color: #fff;
@@ -940,8 +940,16 @@ footer {
         
         .links{
             grid-area: link-web;
-            height: 200px;
-            background-color: white;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .links a{
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            background-color: var(--color-pine);
+            color: var(--color-green)
         }
     }
     
@@ -963,6 +971,7 @@ footer {
         column-gap: 0;
         grid-template-areas:
         "h4pro"
+        "bak"
         "enc"
         "dsn"
         "toy"
