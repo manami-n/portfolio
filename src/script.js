@@ -1,3 +1,5 @@
+export function initPage() { //for the loading timing
+
 // h1 Name animation
 const masks = ['Manami1', 'mAnami2', 'maNami3', 'manAmi4', 'manaMi5', 'manamI6', 'manamIdot', 'Naito1', 'nAito2', 'naIto3', 'naIdotto', 'naiTo4', 'naiTdoto', 'naitO5'];
 
@@ -424,6 +426,4 @@ function toggleNav() {
 }
 toggleNav();
 
-
-
-
+}
