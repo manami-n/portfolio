@@ -51,6 +51,40 @@
             width: 100%;
         }
     }
+    .links{
+        display: flex;
+        justify-content: flex-end;
+        gap: 4%;
+        margin: 15px 0;
+    }
+    .links a {
+        font-size: 1.1rem;
+        font-weight: 300;
+        position: relative;
+        display: inline-block;
+    }
+    .links i{
+        font-size: 0.8rem;
+        color: var(--color-2);
+    }
+
+    .links a:after {
+        content: "";
+        left: 0;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: var(--color-2);
+        bottom: -3px;
+        transform-origin: right top;
+        transform: scale(1, 1);
+        transition: 0.3s;
+        }
+        
+        .links a:hover::after {
+        transform-origin: right top;
+        transform: scale(0, 1);
+        }
     .main-logo { 
         grid-area: main-logo; 
         text-align: center;

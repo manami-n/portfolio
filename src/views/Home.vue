@@ -250,8 +250,8 @@ onMounted(() => {
                     <a href="/portfolio.html">This Portfolio</a>
                 </article>
                      <div class="links"> 
-                        <a href="/websites.html">More Websites</a>
-                        <a href="/webapps.html">More Web Apps</a>
+                        <a href="/websites">More Websites</a>
+                        <a href="/webapps">More Web Apps</a>
                     </div>
                 
             </div>

@@ -9,19 +9,19 @@ import globe from '../assets/img/ico-globe.svg'
      =========================== -->
     <header>
         <div class="content-width">
-            <a href="/index.html"><img :src="logo" alt="Manami Naito"></a>
+            <a href="/"><img :src="logo" alt="Manami Naito"></a>
             <nav>
                 <ul>
-                    <li><a href="/index.html">TOP</a></li>
-                    <li><a href="/index.html#projects">PROJECTS</a>
+                    <li><router-link to="/">TOP</router-link></li>
+                    <li><router-link to="/#projects">PROJECTS</router-link>
                         <ul class="sub">
-                            <li><a href="/websites.html">Websites</a></li>
-                            <li><a href="/webapps.html">Web Apps</a></li>
+                            <li><router-link to="/websites">Websites</router-link></li>
+                            <li><router-link to="/webapps">Web Apps</router-link></li>
                         </ul>
                         </li>
-                    <li><a href="/index.html#experience">EXPERIENCE</a></li>
-                    <li><a href="/index.html#jumpabout">ABOUT</a></li>
-                    <li class="lang"><a href="/index.html#"><img :src="globe" alt="Language"></a>
+                    <li><router-link to="/#experience">EXPERIENCE</router-link></li>
+                    <li><router-link to="/#jumpabout">ABOUT</router-link></li>
+                    <li class="lang"><router-link to="/#"><img :src="globe" alt="Language"></img></router-link>
                         <ul class="sub">
                             <!-- <li><a href="#">ES</a></li>
                             <li><a href="#">JP</a></li> -->
