@@ -235,23 +235,23 @@ onMounted(() => {
                 <!-- max image size 650px 350px -->
                 <article class="project1">
                     <div class="media"><video src="../assets/img/projects/pc-demo.mp4" muted loop playsinline preload="metadata"></video></div>
-                    <a href="/pupcakes.html">Pupcakes</a>
+                    <router-link to="/pupcakes">Pupcakes</router-link>
                 </article>
                 <article class="project2" data-scroll-img="../assets/img/projects/mc-img1.png">
-                    <div class="media"><img src="../assets/img/projects/mc-img1.png" alt=""></div>
-                    <a href="/matcha.html">Matcha Café</a>
+                    <div class="media"><img src="../assets/img/projects/mc-img1.png" alt="Matcha Café"></div>
+                    <router-link to="/matcha">Matcha Café</router-link>
                 </article>
                 <article class="project3">
                     <div class="media"><video src="../assets/img/projects/eg-demo.mp4" muted loop playsinline preload="metadata"></video></div>
-                    <a href="/egenerator.html">Email Generator</a>
+                    <router-link to="/egenerator">Email Generator</router-link>
                 </article>
                 <article class="project4" data-scroll-img="../assets/img/projects/pf-img1.png">
-                    <div class="media"><img src="../assets/img/projects/pf-img1.png" alt=""></div>
-                    <a href="/portfolio.html">This Portfolio</a>
+                    <div class="media"><img src="../assets/img/projects/pf-img1.png" alt="This Portfolio"></div>
+                    <router-link to="/portfolio">This Portfolio</router-link>
                 </article>
                      <div class="links"> 
-                        <a href="/websites">More Websites</a>
-                        <a href="/webapps">More Web Apps</a>
+                        <router-link to="/websites">More Websites</router-link>
+                        <router-link to="/webapps">More Web Apps</router-link>
                     </div>
                 
             </div>
@@ -278,7 +278,7 @@ onMounted(() => {
                 <div class="mid"></div>
                 <h4>PROFESSIONAL</h4>
                 <article class="pro bake">
-                    <h5><a href="https://bake250.com/">Bake 250</a></h5>
+                    <h5><a href="https://bake250.com/" target="_blank">Bake 250</a></h5>
                     <h6>Internship Web Developer</h6>
                     <p class="date">2024/07-2024/07</p>
                     <p class="description">Developed an email layout generator using PHP Symfony and Composer, enabling users to create HTML email templates with customizable layouts, colors, and typography. 
@@ -287,7 +287,7 @@ onMounted(() => {
                     </p>
                 </article>
                 <article class="pro enagic">
-                    <h5><a href="https://www.enagiceu.com/en/">Enagic Europe GmbH</a></h5>
+                    <h5><a href="https://www.enagiceu.com/en/" target="_blank">Enagic Europe GmbH</a></h5>
                     <h6>Commission Staff</h6>
                     <p class="date">2019/07-2023/01</p>
                     <p class="description">Effectively managed daily payments and bank information for 150-200 transactions, utilizing SAP(B1), in-house software, and Excel. 
@@ -303,7 +303,7 @@ onMounted(() => {
                     </p>
                 </article>
                 <article class="pro toylogic">
-                    <h5><a href="https://www.toylogic.com/">Toylogic.Inc</a></h5>
+                    <h5><a href="https://www.toylogic.com/" target="_blank">Toylogic.Inc</a></h5>
                     <h6>Video Games Community Specialist</h6>
                     <p class="date">2015/9-2016/09</p>
                     <p class="description">
@@ -315,23 +315,23 @@ onMounted(() => {
 
                 <h4>EDUCATIONAL</h4>
                 <article class="edu cief">
-                    <h5><a href="https://www.grupcief.com/">GRUP CIEF</a></h5>
+                    <h5><a href="https://www.grupcief.com/" target="_blank">GRUP CIEF</a></h5>
                     <h6>Web Application Development Course</h6>
                     <p class="date">2024/02-2024/07</p>
                     <p class="description">Developing websites and software components that constitute computer applications in distributed environments using web technologies, 
                         based on previously developed technical designs, while also performing verification, documentation, and implementation of the same. <br>
-                        <a href="/pupcakes.html" class="underline">Final Project here</a></p>
+                        <router-link to="/pupcakes" class="underline">Final Project here</router-link></p>
                 </article>
 
                 <article class="edu psm">
-                    <h5><a href="">Scrum Master</a></h5>
+                    <h5><a href="https://www.scrum.org/" target="_blank">Scrum Master</a></h5>
                     <h6>Professional Scrum Master I (PSM1) and Ultimate Agile Scrum Master Certification Training</h6>
                     <p class="date">2021/08-2021/09</p>
                     <p class="description">I obtained Scrum Master Certificate (PSM1) to demonstrate a comprehensive understanding of Scrum principles as outlined in the Scrum Guide and proficiently apply them within Scrum Teams.</p>
                 </article>
 
                 <article class="edu wango">
-                    <h5><a href="https://www.wan55.co.jp/">WAN55</a></h5>
+                    <h5><a href="https://www.wan55.co.jp/" target="_blank">WAN55</a></h5>
                     <h6>Website Coding/Programming Intern</h6>
                     <p>2018/11-2018/12</p>
                     <p class="description">
@@ -341,14 +341,14 @@ onMounted(() => {
                 </article>
 
                 <article class="edu waseda">
-                    <h5><a href="https://www.wit-it.co.jp/">Waseda IT Educational Center</a></h5>
+                    <h5><a href="https://www.wit-it.co.jp/" target="_blank">Waseda IT Educational Center</a></h5>
                     <h6>Web Design and Development Course</h6>
                     <p class="date">2018/8-2018/10</p>
                     <p class="description">Completed a 336-hour web creator course in the Japanese professional school, covering fundamental topics such as HTML, CSS, JavaScript, jQuery, and the creation of low-fidelity and high-fidelity wireframes for responsive designs.</p>
                 </article>
 
                 <article class="edu kuis">
-                    <h5><a href="https://www.kandagaigo.ac.jp/kuis/english/">Kanda University of International Studies</a></h5>
+                    <h5><a href="https://www.kandagaigo.ac.jp/kuis/english/" target="_blank">Kanda University of International Studies</a></h5>
                     <h6>Bachelor degree in Brazilian Language and Culture / Japanese Language Education</h6>
                     <p class="date">2006/4-2010/3</p>
                     <p class="description">I held double majors in Brazilian Language and Culture and English within the linguistic field. 
@@ -372,16 +372,16 @@ onMounted(() => {
                     <div class="slider-container">
                         <div class="slide-wrapper">
                             <div class="slide">
-                                <img src="../assets/img/about/craft1.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/craft1.avif" alt="machine sewing" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/craft2.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/craft2.avif" alt="leather crafting" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/craft3.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/craft3.avif" alt="pottery" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/craft4.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/craft4.avif" alt="lace-tatting" aria-hidden="true">
                             </div>
                         </div>
                     </div>
@@ -393,16 +393,16 @@ onMounted(() => {
                     <div class="slider-container">
                         <div class="slide-wrapper">
                             <div class="slide">
-                                <img src="../assets/img/about/dog1.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/dog1.avif" alt="Tofu the Maltese" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/dog2.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/dog2.avif" alt="Churro" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/dog3.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/dog3.avif" alt="Dog motif accessories" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/dog4.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/dog4.avif" alt="Cooky artwork" aria-hidden="true">
                             </div>
                         </div>
                     </div>
@@ -414,37 +414,37 @@ onMounted(() => {
                     <div class="slider-container">
                         <div class="slide-wrapper">
                             <div class="slide">
-                                <img src="../assets/img/about/felt1.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/felt1.avif" alt="Needle felting Shiba" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/felt2.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/felt2.avif" alt="Needle felting French Bulldog" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/felt3.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/felt3.avif" alt="Needle felting Maltese" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/felt4.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/felt4.avif" alt="Needle felting Yorkies" aria-hidden="true">
                             </div>
                         </div>
                     </div>
                 </article>
                 <article>
                     <div class="description">
-                        <p>In addition to my creative hobbies, I am an avid video game enthusiast, a kimono collector, an ex-hippy backpacker, and a former vegetarian for 17 years (currently a pescatarian). I have a deep appreciation for Japanese traditional entertainments such as Sumo and Rakugo, and I enjoy exploring new cultures, languages, and cuisines.</p>
+                        <p>In addition to my creative hobbies, I am an avid video game enthusiast, a kimono collector, an ex-backpacker, and a former vegetarian for 17 years (currently a pescatarian). I have a deep appreciation for Japanese traditional entertainments such as Sumo and Rakugo, and I enjoy exploring new cultures, languages, and cuisines.</p>
                     </div>
                     <div class="slider-container">
                         <div class="slide-wrapper">
                             <div class="slide">
-                                <img src="../assets/img/about/hob1.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/hob1.avif" alt="PS5 and VR set" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/hob2.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/hob2.avif" alt="going out in Kimono" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/hob3.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/hob3.avif" alt="backpacking" aria-hidden="true">
                             </div>
                             <div class="slide">
-                                <img src="../assets/img/about/hob4.avif" alt="" aria-hidden="true">
+                                <img src="../assets/img/about/hob4.avif" alt="veggie sandwich" aria-hidden="true">
                             </div>
                         </div>
                     </div>
