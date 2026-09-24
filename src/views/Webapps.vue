@@ -8,13 +8,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <main>
-<!-- ===========================
-            LANDING
-     =========================== -->
+    <main class="theme-webapps">
         <section id="websitesList">
+            <div class="title">
+                <div class="content-width">
+                    <h1>Web Apps Gallery</h1>
+                    <p>Here are some of my web application projects. <br>
+                        Some of them are with PHP, and others are built with modern JavaScript frameworks. Each project showcases the ideas behind the development process, and how it works.</p>
+                </div>
+            </div>
             <div class="content-width">
-                <h1>Web App Gallery</h1>
                 <article class="list-project">
                     <div class="texts">
                         <h2>Pupcakes</h2>
@@ -119,3 +122,9 @@ onMounted(() => {
         </section>
     </main>
 </template>
+
+<style scoped>
+.theme-webapps .title{
+    background: url(../src/assets/img/webapps-bg.avif) no-repeat top left;
+}
+</style>

@@ -8,13 +8,17 @@ onMounted(() => {
 </script>
 
 <template>
-    <main>
-<!-- ===========================
-            LANDING
-     =========================== -->
+    <main class="theme-websites">
         <section id="websitesList">
+            <div class="title">
+                <div class="content-width">
+                    <h1>Websites Gallery</h1>
+                    <p>Here are some of my static websites. <br>
+                        I have designed and developed websites for various clients in different languages, including small businesses, startups, and personal projects. <br>
+                        Each project showcases my skills in design, UI, front-end development, and web applications development.</p>
+                </div>
+            </div>
             <div class="content-width">
-                <h1>Website Gallery</h1>
                 <article class="list-project">
                     <div class="texts">
                         <h2>This Portfolio</h2>
@@ -29,14 +33,16 @@ onMounted(() => {
                             <li>#stylish</li>
                             <li>#zen</li>
                         </ul>
-                        <a href="/portfolio.html" class="more">Learn more</a>
+                        <router-link to="/portfolio" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/portfolio" class="image">
                         <figure>
                             <img src="../assets/img/project1.avif" alt="preview">
+                            <div class="media">
+                                <img src="../assets/img/projects/pf-img1.png" alt="">
+                            </div>
                         </figure>
-                        
-                    </div>
+                    </router-link>
                 </article>
                 <article class="list-project">
                     <div class="texts">
@@ -52,14 +58,16 @@ onMounted(() => {
                             <li>#trendy</li>
                             <li>#knowledgeable</li>
                         </ul>
-                        <a href="/matcha" class="more">Learn more</a>
+                        <router-link to="/matcha" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/matcha" class="image">
                         <figure>
                             <img src="../assets/img/project2.avif" alt="preview">
+                            <div class="media">
+                                <img src="../assets/img/projects/mc-img1.png" alt="">
+                            </div>
                         </figure>
-                        
-                    </div>
+                    </router-link>
                 </article>
                 <article class="list-project">
                     <div class="texts">
@@ -75,13 +83,16 @@ onMounted(() => {
                             <li>#handmade</li>
                             <li>#friendly</li>
                         </ul>
-                         <a href="/wedding.html" class="more">Learn more</a>
+                         <router-link to="/wedding" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/wedding" class="image">
                         <figure>
                             <img src="../assets/img/project3.avif" alt="preview">
+                            <div class="media">
+                                <img src="../assets/img/projects/kw-img1.png" alt="">
+                            </div>
                         </figure>
-                    </div>
+                    </router-link>
                 </article>
                 <article class="list-project">
                     <div class="texts">
@@ -96,15 +107,24 @@ onMounted(() => {
                             <li>#dynamic</li>
                             <li>#friendly</li>
                         </ul>
-                        <a href="/prevport.html" class="more">Learn more</a>
+                        <router-link to="/prevport" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/prevport" class="image">
                         <figure>
                             <img src="../assets/img/project4.avif" alt="preview">
+                            <div class="media">
+                                <img src="../assets/img/projects/p2-img1.png" alt="">
+                            </div>
                         </figure>
-                    </div>
+                    </router-link>
                 </article>
             </div>
         </section>
     </main>
 </template>
+
+<style scoped>
+.theme-websites .title{
+    background: url(../src/assets/img/websites-bg.avif) no-repeat center center;
+}
+</style>

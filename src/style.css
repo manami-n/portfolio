@@ -929,22 +929,41 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
    ============================== */
 
 #websitesList{
-    padding-top: 100px;
-    background-color: var(--color-lightBirch);
-
+    background: linear-gradient(67deg, var(--color-lightBirch) 0%, var(--color-cherry) 100%);
+    padding-bottom: 10px;
+    
     .list-project{
         display: flex;
         align-items: center;
         gap: 10px;
-        padding-bottom: 100px;
+        background: linear-gradient(67deg, var(--color-lightBirch) 0%, #DDD 100%);
+        margin-bottom: 150px;
+        padding: 30px;
+        border: 25px solid var(--color-lightBirch);
+        box-shadow: inset 0px 1px 3px 0px #00000033, 0px 3px 10px 3px #00000033;
     }
-    h1{
-        font-size: 3rem;
-        text-align: center;
-        margin-bottom: 50px;
-        color: transparent;
-        background-image: linear-gradient(167deg, var(--color-darkWalnut) 0%, var(--color-green) 31%, var(--color-cherry) 100%);
-        background-clip: text;
+    .title{
+        padding-top: 150px;
+        /* background: url(../src/assets/img/websites-bg.avif) no-repeat center center; */
+        background-size: cover;
+        background-position: center 0%;
+        margin-bottom: 150px;
+        animation: parallax linear;
+        animation-timeline: view();
+        animation-range: entry 100% exit 100%;
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: transparent;
+            background-image: linear-gradient(167deg, var(--color-darkWalnut) 0%, var(--color-green) 50%, var(--color-cherry) 100%);
+            background-clip: text;
+        }
+        p{
+            padding-bottom: 150px;
+            width: 50%;
+            margin: 0 auto;
+        }
     }
     h2{
         font-family: var(--font-accent);
@@ -956,10 +975,12 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
         flex-direction: row-reverse;
     }
     .texts{
-        width: 60%;
+        width: 40%;
+        max-width: 500px;
     }
     .image{
-        width: 35%;
+        width: 60%;
+        display: block;
     }
     .keywords {
         padding: 10px 0;
@@ -1001,9 +1022,10 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
 
     figure {
         width: 100%;
+        height: 450px;
         position: relative;
         overflow: hidden;
-        padding-top: 75%;
+        margin: 0;
         img {
             position: absolute;
             top: 50%;
@@ -1013,8 +1035,52 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
             height: 100%;
             object-fit: cover;
         }
+        video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .media {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+            img {
+                position: static;
+                top: auto;
+                left: auto;
+                transform: translateY(0);
+                width: 100%;
+                height: auto;
+                object-fit: unset;
+                display: block;
+                transition: transform 6s linear;
+            }
+        }
     }
-   
+    .image:hover figure .media {
+        opacity: 1;
+    }
+    .image:hover figure .media img {
+        transform: translateY(calc(-100% + 450px));
+    }
+
+}
+
+/* Parallax animation for background image */
+@keyframes parallax {
+  from {
+    background-position: 50% 0%;
+  }
+  to {
+    background-position: 50% 100%;
+  }
 }
 
 
