@@ -234,7 +234,7 @@ onMounted(() => {
                 </div>
                 <!-- max image size 650px 350px -->
                 <article class="project1">
-                    <div class="media"><video src="../assets/img/projects/pupcakeDemo.mp4" muted loop playsinline preload="metadata"></video></div>
+                    <div class="media"><video src="../assets/img/projects/pc-demo.mp4" muted loop playsinline preload="metadata"></video></div>
                     <a href="/pupcakes.html">Pupcakes</a>
                 </article>
                 <article class="project2" data-scroll-img="../assets/img/projects/mc-img1.png">
@@ -242,7 +242,7 @@ onMounted(() => {
                     <a href="/matcha.html">Matcha Café</a>
                 </article>
                 <article class="project3">
-                    <div class="media"><video src="../assets/img/projects/EmailGeneratorDemo.mp4" muted loop playsinline preload="metadata"></video></div>
+                    <div class="media"><video src="../assets/img/projects/eg-demo.mp4" muted loop playsinline preload="metadata"></video></div>
                     <a href="/egenerator.html">Email Generator</a>
                 </article>
                 <article class="project4" data-scroll-img="../assets/img/projects/pf-img1.png">

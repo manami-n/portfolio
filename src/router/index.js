@@ -36,7 +36,27 @@ const router = createRouter({
     {
       path: '/wedding',
       name: 'Wedding',
-      component: () => import('../views/Wedding.vue')   
+      component: () => import('../views/Wedding.vue')
+    },
+    {
+      path: '/pupcakes',
+      name: 'Pupcakes',
+      component: () => import('../views/Pupcakes.vue')
+    },
+    {
+      path: '/egenerator',
+      name: 'Egenerator',
+      component: () => import('../views/Egenerator.vue')
+    },
+    {
+      path: '/gowheellas',
+      name: 'Gowheellas',
+      component: () => import('../views/Gowheellas.vue')
+    },
+    {
+      path: '/instaplugin',
+      name: 'Instaplugin',
+      component: () => import('../views/Instaplugin.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {

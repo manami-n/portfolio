@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { onMounted } from 'vue';
 import { initPage } from '../script.js';
 
@@ -35,14 +35,17 @@ onMounted(() => {
                             <li>Leaflet</li>
                             <li>Git</li>
                         </ul>
-                        <a href="/pupcakes.html" class="more">Learn more</a>
+                        <router-link to="/pupcakes" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
-                        <figure>
-                            <img src="../assets/img/app1.avif" alt="preview">
-                        </figure>
-                        
-                    </div>
+                    <router-link to="/pupcakes" class="image">
+                            <figure>
+                                <img src="../assets/img/app1.avif" alt="preview">
+                                <div class="media">
+                                    <video src="../assets/img/projects/pc-demo.mp4" muted loop playsinline preload="metadata">
+                                    </video>
+                                </div>
+                            </figure>
+                    </router-link>
                 </article>
                 <article class="list-project">
                     <div class="texts">
@@ -60,14 +63,17 @@ onMounted(() => {
                             <li>Docker</li>
                             <li>Git</li>
                         </ul>
-                        <a href="/egenerator.html" class="more">Learn more</a>
+                        <router-link to="/egenerator" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/egenerator" class="image">
                         <figure>
                             <img src="../assets/img/app2.avif" alt="preview">
+                            <div class="media">
+                                <video src="../assets/img/projects/eg-demo.mp4" muted loop playsinline preload="metadata">
+                                </video>
+                            </div>
                         </figure>
-                        
-                    </div>
+                    </router-link>
                 </article>
                 <article class="list-project">
                     <div class="texts">
@@ -85,13 +91,17 @@ onMounted(() => {
                                 <li>Session</li>
                                 <li>Git</li>
                             </ul>
-                        <a href="/gowheellas.html" class="more">Learn more</a>
+                        <router-link to="/gowheellas" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/gowheellas" class="image">
                         <figure>
                             <img src="../assets/img/app3.avif" alt="preview">
+                            <div class="media">
+                                <video src="../assets/img/projects/gw-demo.mp4" muted loop playsinline preload="metadata">
+                                </video>
+                            </div>
                         </figure>
-                    </div>
+                    </router-link>
                 </article>
                 <article class="list-project">
                     <div class="texts">
@@ -110,13 +120,17 @@ onMounted(() => {
                             <li>Docker</li>
                             <li>Git</li>
                         </ul>
-                        <a href="/instaplugin.html" class="more">Learn more</a>
+                        <router-link to="/instaplugin" class="more">Learn more</router-link>
                     </div>
-                    <div class="image">
+                    <router-link to="/instaplugin" class="image">
                         <figure>
                             <img src="../assets/img/app4.avif" alt="preview">
+                            <div class="media">
+                                <video src="../assets/img/projects/ip-demo.mp4" muted loop playsinline preload="metadata">
+                                </video>
+                            </div>
                         </figure>
-                    </div>
+                    </router-link>
                 </article>
             </div>
         </section>

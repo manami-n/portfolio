@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { onMounted } from 'vue';
 import { initPage } from '../script.js';
 

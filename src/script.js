@@ -5,6 +5,7 @@ const masks = ['Manami1', 'mAnami2', 'maNami3', 'manAmi4', 'manaMi5', 'manamI6',
 
  masks.forEach((mask) => {
    const path = document.querySelector(`#m-${mask}`);
+   if (!path) return;
    const length = path.getTotalLength();
 
    path.style.strokeDasharray = length;
@@ -83,6 +84,7 @@ function buildPath(){
 }
 
 // clay mouseover interaction
+if (svg) {
 svg.addEventListener("pointermove", (e)=>{
   const rect = svg.getBoundingClientRect();
   const mx = e.clientX - rect.left;
@@ -112,13 +114,16 @@ svg.addEventListener("pointermove", (e)=>{
     }
   });
 });
+}
 
 // Clay loop
 function loop(){
   path.setAttribute("d", buildPath());
   requestAnimationFrame(loop);
 }
-loop();
+if (path) {
+  loop();
+}
 
 
  // Skills hover label
@@ -139,9 +144,11 @@ var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
 
-words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
-  splitLetters(words[i]);
+if (words.length > 0) {
+  words[currentWord].style.opacity = 1;
+  for (var i = 0; i < words.length; i++) {
+    splitLetters(words[i]);
+  }
 }
 
 function changeWord() {
@@ -187,8 +194,10 @@ function splitLetters(word) {
   wordArray.push(letters);
 }
 
-changeWord();
-setInterval(changeWord, 4000);
+if (words.length > 0) {
+  changeWord();
+  setInterval(changeWord, 4000);
+}
 
 // Recent Projects hover video play
 document.querySelectorAll('#projects article .media video').forEach((video) => {
@@ -200,6 +209,21 @@ document.querySelectorAll('#projects article .media video').forEach((video) => {
   });
 
   article.addEventListener('mouseleave', () => {
+    video.pause();
+  });
+});
+
+// Project list page hover video play (Web Apps, etc.)
+document.querySelectorAll('.list-project .image').forEach((imageLink) => {
+  const video = imageLink.querySelector('.media video');
+  if (!video) return;
+
+  imageLink.addEventListener('mouseenter', () => {
+    video.currentTime = 0;
+    video.play();
+  });
+
+  imageLink.addEventListener('mouseleave', () => {
     video.pause();
   });
 });

@@ -1062,6 +1062,16 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
                 display: block;
                 transition: transform 6s linear;
             }
+            video {
+                position: static;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
         }
     }
     .image:hover figure .media {
