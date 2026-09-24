@@ -1,4 +1,8 @@
+let wordTimer = null;
+
 export function initPage() { //for the loading timing
+  clearInterval(wordTimer)  
+
 
 // h1 Name animation
 const masks = ['Manami1', 'mAnami2', 'maNami3', 'manAmi4', 'manaMi5', 'manamI6', 'manamIdot', 'Naito1', 'nAito2', 'naIto3', 'naIdotto', 'naiTo4', 'naiTdoto', 'naitO5'];
@@ -196,7 +200,7 @@ function splitLetters(word) {
 
 if (words.length > 0) {
   changeWord();
-  setInterval(changeWord, 4000);
+  wordTimer = setInterval(changeWord, 4000);
 }
 
 // Recent Projects hover video play
@@ -433,19 +437,13 @@ function toggleNav() {
   var hamburger = document.getElementById('burg');
   var blackBg = document.getElementById('burg-bg');
 
-  hamburger.addEventListener('click', function() {
-    body.classList.toggle('nav-open');
-  });
-  blackBg.addEventListener('click', function() {
-    body.classList.remove('nav-open');
-  });
+  hamburger.onclick = function () { body.classList.toggle('nav-open') }
+  blackBg.onclick   = function () { body.classList.remove('nav-open') }
 
-  // Add event listener to each navigation link
+  // Add click handler to each navigation link
   var navLinks = document.querySelectorAll('nav ul li a');
   navLinks.forEach(function(navLink) {
-    navLink.addEventListener('click', function() {
-      body.classList.remove('nav-open');
-    });
+    navLink.onclick = function () { body.classList.remove('nav-open') }
   });
 }
 toggleNav();

@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="theme-gowheellas">
+    <main class="theme-gowheellas webapp">
         <section class="work-land">
             <div class="content-width">
             <div class="title">

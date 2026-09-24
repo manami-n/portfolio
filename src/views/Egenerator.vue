@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-<main class="theme-egenerator">
+<main class="theme-egenerator webapp">
         <section class="work-land">
             <div class="content-width">
             <div class="title">

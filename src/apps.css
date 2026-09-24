@@ -1,11 +1,4 @@
-:root {
-    --color-1 : #FFDA77;
-    --color-2 : #AEE6E6;
-    --color-land-bg : #FBF6F0;
-    --color-land-txA : #FFA45B;
-    --color-land-txB : #333;
-}
-
+.webapp{
 
 .work-land {
     background-color: var(--color-land-bg);
@@ -271,13 +264,13 @@
     }
 }
 
-
+}
 
 /* ***************************
             DARK MODE
    *************************** */
    @media (prefers-color-scheme: dark) {
-    :root{
+    .webapp{
         --color-1: #a9a1a1;
     }
 }
@@ -287,9 +280,9 @@
             MEDIA QUERIES
    *************************** */
 @media (width < 700px) { 
-    :root{
+    .webapp{
         --width-content: clamp(380px, 90%, 500px);
-    }
+    
     .work-land {
         padding: 60px 0 0;
         .content-width{
@@ -317,4 +310,5 @@
             width: 100%;
         }
     }
+}
 }

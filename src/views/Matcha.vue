@@ -8,16 +8,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="theme-matcha">
+    <main class="theme-matcha website">
         <section class="work-land">
             <div class="content-width" >
             <div class="title">
                 <h1>Matcha Café Wakaba</h1>
                 <p>Sip and Savor Kyoto Through Matcha</p>
                 <ul class="links">
-                    <li><a href="../assets/projects/mc-PC.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Wide</a></li>
-                    <li><a href="../assets/projects/mc-SP.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Mobile</a></li>
-                    <li><a href="../archives/mc/" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo(JA)</a></li>
+                    <li><a href="/projects/matcha/wide_demo.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Wide</a></li>
+                    <li><a href="/projects/matcha/mobile_demo.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Mobile</a></li>
+                    <li><a href="/archives/matcha/index.html" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo(JA)</a></li>
                 </ul>
             </div>
             <div class="main-images">

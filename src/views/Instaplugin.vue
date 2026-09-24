@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-<main class="theme-instaplugin">
+<main class="theme-instaplugin webapp">
         <section class="work-land">
             <div class="content-width">
             <div class="title">

@@ -271,7 +271,7 @@ onMounted(() => {
                 <span class="center"></span>
             </h3>
             <div class="download">
-                <p><a href="/assets/CV_ManamiNaito_EN.pdf" download="manami_naito_cv">Download<br>full resume<br>in PDF format</a></p>
+                <p><a href="/cv/CV_ManamiNaito_EN.pdf" download="manami_naito_cv">Download<br>full resume<br>in PDF format</a></p>
                     <img src="../assets/img/ico-dl.svg" alt="" aria-hidden="true">
             </div>
             <div class="content-width">

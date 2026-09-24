@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-     <main class="theme-pupcakes">
+     <main class="theme-pupcakes webapp">
         <section class="work-land">
             <div class="content-width">
             <div class="title">
@@ -104,3 +104,13 @@ onMounted(() => {
          
     </main>
 </template>
+
+<style scoped>
+    .theme-pupcakes {
+        --color-1 : #FFDA77;
+        --color-2 : #AEE6E6;
+        --color-land-bg : #FBF6F0;
+        --color-land-txA : #FFA45B;
+        --color-land-txB : #333;
+    }
+</style>

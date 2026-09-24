@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap');
-:root {
-    --color-1 : #d0beb3;
-    --color-2 : #536050;
-    --color-land-bg : #d0beb3;
-    --color-land-txA : #536050;
-    --color-land-txB : #3c342e;
-    --font-L1 : "Nunito", "Century Gothic", Helvetica, sans-serif;
-    --font-N1 : "Assistant", Arial, sans-serif;
-}
-
+.website{
 .work-land {
     background-color: var(--color-land-bg);
     padding: 70px;
@@ -285,13 +275,13 @@
     }
 }
 
-
+}
 
 /* ***************************
             DARK MODE
    *************************** */
    @media (prefers-color-scheme: dark) {
-    :root{
+    .website{
         --color-1: #a9a1a1;
     }
 }
@@ -301,9 +291,9 @@
             MEDIA QUERIES
    *************************** */
 @media (width < 700px) { 
-    :root{
+    .website{
         --width-content: clamp(380px, 90%, 500px);
-    }
+    
     .work-land {
         padding: 60px 0 0;
         .content-width{
@@ -347,4 +337,5 @@
             }
         }  
     }
+}
 }

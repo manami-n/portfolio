@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="theme-portfolio">
+    <main class="theme-portfolio website">
         <section class="work-land">
             <div class="content-width">
             <div class="title">
@@ -105,5 +105,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
+    .theme-portfolio {
+        --color-1 : #536050;
+        --color-2 : #e9e9e9;
+        --color-land-bg : #d0beb3;
+        --color-land-txA : #536050;
+        --color-land-txB : #3c342e;
+    }
 </style>

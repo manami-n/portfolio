@@ -944,7 +944,6 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
     }
     .title{
         padding-top: 150px;
-        /* background: url(../src/assets/img/websites-bg.avif) no-repeat center center; */
         background-size: cover;
         background-position: center 0%;
         margin-bottom: 150px;
@@ -980,6 +979,7 @@ background: linear-gradient(0deg, #341a0e 84%, var(--color-lightBirch) 92%);
     }
     .image{
         width: 60%;
+        height: auto;
         display: block;
     }
     .keywords {
@@ -1448,6 +1448,13 @@ footer {
         }
         .image{
             width: 100%;
+        }
+        figure{
+            height: 180px;
+            .image{
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }

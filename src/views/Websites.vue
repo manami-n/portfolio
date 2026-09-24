@@ -33,9 +33,9 @@ onMounted(() => {
                             <li>#stylish</li>
                             <li>#zen</li>
                         </ul>
-                        <router-link to="/portfolio" class="more">Learn more</router-link>
+                        <router-link to="/portfolio" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/portfolio" class="image">
+                    <router-link to="/portfolio" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/project1.avif" alt="preview">
                             <div class="media">
@@ -58,9 +58,9 @@ onMounted(() => {
                             <li>#trendy</li>
                             <li>#knowledgeable</li>
                         </ul>
-                        <router-link to="/matcha" class="more">Learn more</router-link>
+                        <router-link to="/matcha" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/matcha" class="image">
+                    <router-link to="/matcha" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/project2.avif" alt="preview">
                             <div class="media">
@@ -83,9 +83,9 @@ onMounted(() => {
                             <li>#handmade</li>
                             <li>#friendly</li>
                         </ul>
-                         <router-link to="/wedding" class="more">Learn more</router-link>
+                         <router-link to="/wedding" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/wedding" class="image">
+                    <router-link to="/wedding" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/project3.avif" alt="preview">
                             <div class="media">
@@ -107,9 +107,9 @@ onMounted(() => {
                             <li>#dynamic</li>
                             <li>#friendly</li>
                         </ul>
-                        <router-link to="/prevport" class="more">Learn more</router-link>
+                        <router-link to="/prevport" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/prevport" class="image">
+                    <router-link to="/prevport" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/project4.avif" alt="preview">
                             <div class="media">
@@ -125,6 +125,6 @@ onMounted(() => {
 
 <style scoped>
 .theme-websites .title{
-    background: url(../src/assets/img/websites-bg.avif) no-repeat center center;
+    background: url(/src/assets/img/websites-bg.avif) no-repeat center center;
 }
 </style>

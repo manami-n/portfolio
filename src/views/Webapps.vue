@@ -35,9 +35,9 @@ onMounted(() => {
                             <li>Leaflet</li>
                             <li>Git</li>
                         </ul>
-                        <router-link to="/pupcakes" class="more">Learn more</router-link>
+                        <router-link to="/pupcakes" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/pupcakes" class="image">
+                    <router-link to="/pupcakes" class="image" target="_blank">
                             <figure>
                                 <img src="../assets/img/app1.avif" alt="preview">
                                 <div class="media">
@@ -63,9 +63,9 @@ onMounted(() => {
                             <li>Docker</li>
                             <li>Git</li>
                         </ul>
-                        <router-link to="/egenerator" class="more">Learn more</router-link>
+                        <router-link to="/egenerator" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/egenerator" class="image">
+                    <router-link to="/egenerator" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/app2.avif" alt="preview">
                             <div class="media">
@@ -91,9 +91,9 @@ onMounted(() => {
                                 <li>Session</li>
                                 <li>Git</li>
                             </ul>
-                        <router-link to="/gowheellas" class="more">Learn more</router-link>
+                        <router-link to="/gowheellas" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/gowheellas" class="image">
+                    <router-link to="/gowheellas" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/app3.avif" alt="preview">
                             <div class="media">
@@ -120,9 +120,9 @@ onMounted(() => {
                             <li>Docker</li>
                             <li>Git</li>
                         </ul>
-                        <router-link to="/instaplugin" class="more">Learn more</router-link>
+                        <router-link to="/instaplugin" class="more" target="_blank">Learn more</router-link>
                     </div>
-                    <router-link to="/instaplugin" class="image">
+                    <router-link to="/instaplugin" class="image" target="_blank">
                         <figure>
                             <img src="../assets/img/app4.avif" alt="preview">
                             <div class="media">
@@ -139,6 +139,6 @@ onMounted(() => {
 
 <style scoped>
 .theme-webapps .title{
-    background: url(../src/assets/img/webapps-bg.avif) no-repeat top left;
+    background: url(/src/assets/img/webapps-bg.avif) no-repeat top left;
 }
 </style>

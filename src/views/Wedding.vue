@@ -8,16 +8,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="theme-wedding">
+    <main class="theme-wedding website">
         <section class="work-land">
             <div class="content-width" >
             <div class="title">
                 <h1>Kokuban Wedding</h1>
                 <p>Heartwarming Boards for Your Special Day</p>
                 <ul class="links">
-                    <li><a href="../assets/projects/kw-PC.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Wide</a></li>
-                    <li><a href="../assets/projects/kw-SP.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Mobile</a></li>
-                    <li><a href="../archives/kw/" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo(JA)</a></li>
+                    <li><a href="/projects/wedding/wide_demo.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Wide</a></li>
+                    <li><a href="/projects/wedding/mobile_demo.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Mobile</a></li>
+                    <li><a href="/archives/wedding/index.html" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo(JA)</a></li>
                 </ul>
             </div>
             <div class="main-images">
@@ -122,7 +122,7 @@ onMounted(() => {
                 --color-land-txB : #fff;
                 --font-L1 : "Londrina Solid", sans-serif;
                 --font-N1 : "Karma", serif;}
-        .links a { color: var(--color-land-txA);}
-        .links i{ color: var(--color-1); }
-        .links a:after{ background-color: var(--color-1); }
+        .links a { color: var(--color-land-txA) !important;}
+        .links i{ color: var(--color-1) !important;}
+        .links a:after{ background-color: var(--color-1) !important; }
 </style>

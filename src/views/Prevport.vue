@@ -8,16 +8,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="theme-prevport">
+    <main class="theme-prevport website">
         <section class="work-land">
             <div class="content-width" >
             <div class="title">
                 <h1>Portfolio 2018</h1>
                 <p>Freelance Purpose Portfolio</p>
                 <ul class="links">
-                    <li><a href="../assets/projects/p2-PC.pdf"  target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Wide</a></li>
-                    <li><a href="../assets/projects/p2-SP.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Mobile</a></li>
-                    <li><a href="../archives/p2/" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a></li>
+                    <li><a href="/projects/prevport/wide_demo.pdf"  target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Wide</a></li>
+                    <li><a href="/projects/prevport/mobile_demo.pdf" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> PDF Mobile</a></li>
+                    <li><a href="/archives/prevport/index.html" target="_blank" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a></li>
                 </ul>
             </div>
             <div class="main-images">
