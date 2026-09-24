@@ -16,7 +16,7 @@ onMounted(() => {
                 <p>My cosy little showroom</p>
                 <ul class="links">
                     <li><a href="https://www.figma.com/design/v5ZsGRDSiD65otiBAVcx1E/Portfolio?node-id=0-1&t=pxGKEYrNxvxSPslp-1" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Figma</a></li>
-                    <li><a href="" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> GitHub</a></li>
+                    <li><a href="https://github.com/manami-n/portfolio/" class="big-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> GitHub</a></li>
                 </ul>
             </div>
             <div class="main-images">
